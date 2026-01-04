@@ -23,16 +23,23 @@
 	// "postCreateCommand": "cat /etc/os-release",
 	// Configure tool-specific properties.
 	// "customizations": {},
+	,
 	"customizations": {
 		"vscode": {
 			"extensions": [
-				"ms-python.python", // The main Microsoft Python extension
-				"ms-python.vscode-pylance", // Pylance language server (recommended)
-				"ms-toolsai.jupyter", // Essential for Jupyter Notebooks and interactive windows 
-				"ms-toolsai.jupyter-keymap", // Jupyter keymap for VS Code 
-				"ms-toolsai.jupyter-renderers", // Jupyter Notebook Renderers 
-				"ms-python.black-formatter", // Common Python code formatter 
-				"ms-python.isort" // Common Python import sorter
+				"ms-python.python",
+				"ms-python.vscode-pylance",
+				"ms-toolsai.jupyter",
+				"ms-toolsai.jupyter-keymap",
+				"ms-toolsai.jupyter-renderers",
+				"ms-python.black-formatter",
+				"ms-python.isort",
+				"mhutchie.git-graph",
+				"PKief.material-icon-theme",
+				"frhtylcn.pythonsnippets",
+				"ZainChen.json",
+				"yzhang.markdown-all-in-one",
+				"esbenp.prettier-vscode"
 			],
 			"settings": {
 				// 1. Tell the extension where the primary interpreter is located
@@ -45,7 +52,7 @@
 				"jupyter.jupyterServerType": "local"
 			}
 		}
-	}
+	},
 	// Uncomment to connect as an existing user other than the container default. More info: https://aka.ms/dev-containers-non-root.
 	// "remoteUser": "devcontainer"
 }
