@@ -18,13 +18,15 @@ RUN apt-get update && apt-get install -y \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
+# Install uv (Python package manager)
+RUN pip install --no-cache-dir uv
+    
 # Create working directory
-RUN mkdir /app
 WORKDIR /app
 
 # Copy Python dependencies and install
 COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
+RUN uv pip install --system -r requirements.txt
 
 # Default shell
 CMD ["/bin/bash"]
