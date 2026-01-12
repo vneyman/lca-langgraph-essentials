@@ -39,7 +39,8 @@
 				"frhtylcn.pythonsnippets",
 				"ZainChen.json",
 				"yzhang.markdown-all-in-one",
-				"esbenp.prettier-vscode"
+				"esbenp.prettier-vscode",
+				"openai.chatgpt"
 			],
 			"settings": {
 				// 1. Tell the extension where the primary interpreter is located
